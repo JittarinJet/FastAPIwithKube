@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fastapi-app
+  template:
+    metadata:
+      labels:
+        app: fastapi-app
+    spec:
+      containers:
+      - name: fastapi-app
+        image: your-dockerhub-username/fastapiwithkube:latest # <-- IMPORTANT: Replace with your Docker Hub username and image name
+        ports:
+        - containerPort: 80
