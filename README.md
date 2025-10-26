@@ -1,5 +1,3 @@
-# FastAPIwithKube
-
 # FastAPI with Kubernetes
 
 This project contains a simple backend application built with FastAPI, containerized using Docker, and ready for deployment on a Kubernetes cluster.
